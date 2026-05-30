@@ -1,5 +1,11 @@
 # ood-stepfunctions-adapter
 
+[![CI](https://github.com/scttfrdmn/ood-stepfunctions-adapter/actions/workflows/ci.yml/badge.svg)](https://github.com/scttfrdmn/ood-stepfunctions-adapter/actions/workflows/ci.yml)
+[![Go Report Card](https://goreportcard.com/badge/github.com/scttfrdmn/ood-stepfunctions-adapter)](https://goreportcard.com/report/github.com/scttfrdmn/ood-stepfunctions-adapter)
+[![codecov](https://codecov.io/gh/scttfrdmn/ood-stepfunctions-adapter/branch/main/graph/badge.svg)](https://codecov.io/gh/scttfrdmn/ood-stepfunctions-adapter)
+[![Go Reference](https://pkg.go.dev/badge/github.com/scttfrdmn/ood-stepfunctions-adapter.svg)](https://pkg.go.dev/github.com/scttfrdmn/ood-stepfunctions-adapter)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 An [Open OnDemand](https://openondemand.org/) compute adapter that translates OOD job submissions into [AWS Step Functions](https://aws.amazon.com/step-functions/) executions.
 
 ## Commands
