@@ -9,7 +9,10 @@ var (
 	stateMachineArn string
 )
 
+var version = "dev" // overridden at release time via -ldflags -X .../cmd.version
+
 var rootCmd = &cobra.Command{
+	Version: version,
 	Use:   "ood-stepfunctions-adapter",
 	Short: "OOD compute adapter for AWS Step Functions",
 	Long:  "Translates Open OnDemand job submissions to AWS Step Functions API calls.",
