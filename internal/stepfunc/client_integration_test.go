@@ -29,10 +29,10 @@ func createTestStateMachine(t *testing.T, ctx context.Context, endpointURL strin
 	}
 	sfnSvc := sfn.NewFromConfig(cfg)
 	out, err := sfnSvc.CreateStateMachine(ctx, &sfn.CreateStateMachineInput{
-		Name: aws.String("ood-test"),
-		Type: sfntypes.StateMachineTypeStandard,
+		Name:       aws.String("ood-test"),
+		Type:       sfntypes.StateMachineTypeStandard,
 		Definition: aws.String(`{"Comment":"test","StartAt":"Pass","States":{"Pass":{"Type":"Pass","End":true}}}`),
-		RoleArn: aws.String("arn:aws:iam::123456789012:role/test-role"),
+		RoleArn:    aws.String("arn:aws:iam::123456789012:role/test-role"),
 	})
 	if err != nil {
 		t.Fatalf("createTestStateMachine: CreateStateMachine: %v", err)
